@@ -1,0 +1,18 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+main(){
+
+ 	int a=0,b=1;
+	int feb=0;
+	while(feb<1000){
+		feb=a+b;
+		cout<<"Fibonacci Number:"<<feb<<"\n";
+		a=b;
+		b=feb;
+		
+	}
+	 
+
+}
