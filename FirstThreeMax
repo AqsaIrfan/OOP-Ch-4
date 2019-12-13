@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+main(){
+	int num, c=1;
+	int fmax=0;
+	int smax=0;
+	int tmax= 0;
+	
+	while(c<=10){
+		cout<<"Please Enter sales for salesman# "<<c<<"\n";
+		cin>>num;
+		if(fmax<num){
+			tmax=smax;
+			smax=fmax;
+			 fmax=num;
+		}
+		else if(smax<num){
+			tmax=smax;
+			smax=num;
+		}
+		else if(tmax<num){
+			tmax=num;
+		}
+		c++;
+	}
+	cout<<"Maximum sales for a salesman is "<<fmax<<"\n";
+	cout<<"2nd Maximum sales for a salesman is "<<smax<<"\n";
+	cout<<"3rd Maximum sales for a salesman is "<<tmax<<"\n";
+}
